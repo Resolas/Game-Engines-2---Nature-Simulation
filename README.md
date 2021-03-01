@@ -1,3 +1,4 @@
+![Nature Sim Storyboard1](https://user-images.githubusercontent.com/64108044/109565555-8ce1ce80-7ada-11eb-9f2e-8de011132cc9.png)
 # Game Engines 2 - Space Battle Game - Nature Simulation     C18510403
  
 ---------------------------------- SCRAPPED
@@ -28,4 +29,5 @@ Style:
 Models will preferably be made in unity or in blender instead of importing third party works, that will otherwise cause art style clashes, a low poly is my preferred style as it makes models easier to make, nice to look at, and decreases the scope in artstyle to be doable in the assignment time period
 
 STORYBOARD OF NATURE SCENE
+![Nature Sim Storyboard1](https://user-images.githubusercontent.com/64108044/109565623-a125cb80-7ada-11eb-8737-4e79ed1239c0.png)
 
