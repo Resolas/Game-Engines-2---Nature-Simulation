@@ -1,6 +1,6 @@
 # Game Engines 2 - Space Battle Game - Nature Simulation     C18510403
  
-
+---------------------------------- SCRAPPED
 Game Idea - Planet Destroyer Game
 
 Game Pitch:
@@ -11,6 +11,9 @@ You control only one type of unit, whose purpose is to construct gargantuan mach
 
 
 Backlog:
+---------------------------------- SCRAPPED
+
+
 
 NATURE SIMULATION SCENE
 
@@ -23,3 +26,6 @@ A simulation scene of a sky island, with cameras rotating, switching out to anot
 
 Style:
 Models will preferably be made in unity or in blender instead of importing third party works, that will otherwise cause art style clashes, a low poly is my preferred style as it makes models easier to make, nice to look at, and decreases the scope in artstyle to be doable in the assignment time period
+
+STORYBOARD OF NATURE SCENE
+
