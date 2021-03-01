@@ -1,4 +1,4 @@
-![Nature Sim Storyboard1](https://user-images.githubusercontent.com/64108044/109565555-8ce1ce80-7ada-11eb-9f2e-8de011132cc9.png)
+
 # Game Engines 2 - Space Battle Game - Nature Simulation     C18510403
  
 ---------------------------------- SCRAPPED
