@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlantSpawn : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         GeneratePlants();
     }
@@ -33,16 +33,24 @@ public class PlantSpawn : MonoBehaviour
         for (int i = 0; i < loopX; i++)
         {
 
-            for (int j = 0; i < loopZ; j++)
+            for (int j = 0; j < loopZ; j++)
             {
 
                 int rngX = Random.Range(-rngRange,rngRange);
                 int rngZ = Random.Range(-rngRange,rngRange);
 
+             //   float xPos = transform.position.x + (spacing * )
+             //       float zPos
+
                 RaycastHit hit;
 
-                if (Physics.Raycast(transform.position + new Vector3(spacing * loopX + rngX,0,spacing * loopZ + rngZ),Vector3.down, out hit,Mathf.Infinity))
+                if (Physics.Raycast(transform.position + new Vector3(spacing * i + rngX, transform.position.y,spacing * j + rngZ),Vector3.down, out hit,Mathf.Infinity))
                 {
+                
+
+                    
+
+
                     if (hit.collider.CompareTag(targetTag))
                     {
                         int rngPlant = Random.Range(0, myPlants.Length);
@@ -66,7 +74,6 @@ public class PlantSpawn : MonoBehaviour
 
 
     }
-
 
     private void OnDrawGizmos()
     {
