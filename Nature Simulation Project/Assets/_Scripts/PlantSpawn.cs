@@ -10,19 +10,17 @@ public class PlantSpawn : MonoBehaviour
         GeneratePlants();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Header("Gen Settings")]
 
-    int loopX = 50;
-    int loopZ = 50;
+    public int loopX = 50;
+    public int loopZ = 50;
 
-    float spacing = 10;
-    int rngRange = 10;
+    public float spacing = 10;
+    public int rngRange = 10;
 
-    public GameObject[] myPlants;
+
+    public SpawnTable getSpawnTable;
+
 	public string targetTag;
 
     void GeneratePlants()
@@ -53,9 +51,9 @@ public class PlantSpawn : MonoBehaviour
 
                     if (hit.collider.CompareTag(targetTag))
                     {
-                        int rngPlant = Random.Range(0, myPlants.Length);
+                        int rngPlant = Random.Range(0, getSpawnTable.mySpawnList.Length);
 
-                        var newPlant = Instantiate(myPlants[rngPlant], hit.point, Quaternion.identity);
+                        var newPlant = Instantiate(getSpawnTable.mySpawnList[rngPlant], hit.point, Quaternion.Euler(0,Random.Range(0,360),0));
 
                         newPlant.transform.SetParent(hit.transform);
                     }

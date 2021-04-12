@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TreeSpawn : MonoBehaviour
+public class TreeSpawn : MonoBehaviour  // Tree Spawn Area
 {
 
-
+    //
 
     public int loopX = 10;
     public int loopZ = 10;

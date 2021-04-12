@@ -10,11 +10,12 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
         myTransform = GetComponent<Transform>();
 
         // Start Growth
-        curGrowth = Random.Range(0,0.1f);
-
+        curGrowth = Random.Range(0,0.2f);
+        growthRateRange = Random.Range(1,2);
     }
 
     public float growthRate = 0.01f;
+    public float growthRateRange;
     public float curGrowth;
 
     public int tillMaturity;
@@ -31,7 +32,7 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
 
         if (isMature != true)       //  1 = max size
         {
-            curGrowth += growthRate * Time.deltaTime;
+            curGrowth += growthRate * growthRateRange * Time.deltaTime;
             myTransform.localScale = new Vector3(1 * curGrowth,1 * curGrowth,1 * curGrowth);
 
             if (curGrowth > 1)
