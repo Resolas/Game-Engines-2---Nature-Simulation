@@ -9,7 +9,7 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
     {
 
         curFood = Random.Range(maxFood/2,maxFood);
-        curWater = Random.Range(maxWater/2,maxWater);
+     //   curWater = Random.Range(maxWater/2,maxWater);
         curRest = Random.Range(maxRest/2,maxRest);
         curHealth = Random.Range(maxHealth/2,maxHealth);
 
@@ -19,16 +19,16 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
     }
 
     public int maxFood = 100;
-    public int maxWater = 100;
+ //   public int maxWater = 100;
     public int maxRest = 100;
     public int maxHealth = 100;
 
     public bool isDead = false;
 
-    private int curFood;
-    private int curWater;
-    private int curRest;
-    private int curHealth;
+    public int curFood;
+ //   public int curWater;
+    public int curRest;
+    public int curHealth;
 
     
 
@@ -39,10 +39,10 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
         {
 
             curFood--;
-            curWater--;
+         //   curWater--;
             curRest--;
 
-            if (curFood < 0 || curWater < 0)
+            if (curFood < 0 /* || curWater < 0 */)
             {
                 maxHealth--;
             }

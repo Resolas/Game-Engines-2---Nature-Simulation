@@ -7,12 +7,62 @@ public class CameraSwitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(RunCam(setTime));    
     }
 
-    // Update is called once per frame
-    void Update()
+    public int setTime = 5;
+
+    public GameObject[] myCams;
+    private int curCam;
+
+
+    void SwitchCurCam()
     {
-        
+
+        if (curCam > myCams.Length)
+        {
+            curCam++;
+        }
+        else
+        {
+            curCam = 0;
+        }
+
+        for (int i = 0; i < myCams.Length; i++)
+        {
+
+            if (i == curCam)
+            {
+
+                myCams[i].SetActive(true);
+
+            }
+            else
+            {
+                myCams[i].SetActive(false);
+            }
+
+        }
+
     }
+
+    IEnumerator RunCam(int time)
+    {
+
+        
+
+        while (true)
+        {
+            yield return new WaitForSeconds(time);
+
+
+            SwitchCurCam();
+
+
+        }
+
+
+
+    }
+
 }
