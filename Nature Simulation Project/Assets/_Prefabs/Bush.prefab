@@ -1400,7 +1400,7 @@ MeshCollider:
   m_GameObject: {fileID: 1667063729623308234}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -1415,9 +1415,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1667063730575864903}
   - component: {fileID: 1097708839299412186}
+  - component: {fileID: 8828340839248199011}
   m_Layer: 0
   m_Name: Bush
-  m_TagString: Untagged
+  m_TagString: Flora
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1450,6 +1451,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthRate: 0.01
+  growthRateRange: 0
   curGrowth: 0
   tillMaturity: 0
   isMature: 0
+--- !u!135 &8828340839248199011
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667063730575864900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.48
+  m_Center: {x: 0, y: 1.83, z: 0}

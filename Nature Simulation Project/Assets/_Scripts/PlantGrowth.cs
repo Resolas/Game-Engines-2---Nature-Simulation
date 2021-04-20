@@ -12,6 +12,7 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
         // Start Growth
         curGrowth = Random.Range(0,0.2f);
         growthRateRange = Random.Range(1,2);
+        foodValue = Random.Range(5,50);
     }
 
     public float growthRate = 0.01f;
@@ -21,6 +22,8 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
     public int tillMaturity;
 
     public bool isMature;
+    public int foodValue;
+    public int finalfoodValue;
 
     Transform myTransform;
 
@@ -38,6 +41,11 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
             if (curGrowth > 1)
             {
                 isMature = true;
+                finalfoodValue = foodValue;
+            }
+            else
+            {
+                finalfoodValue = foodValue / 2;
             }
 
         }

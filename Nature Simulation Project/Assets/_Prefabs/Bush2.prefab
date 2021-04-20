@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9167854643589549139}
   m_Layer: 0
   m_Name: Bush2
-  m_TagString: Untagged
+  m_TagString: Flora
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2252,7 +2252,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!114 &9167854643589549139
@@ -2272,3 +2272,5 @@ MonoBehaviour:
   curGrowth: 0
   tillMaturity: 0
   isMature: 0
+  foodValue: 0
+  finalfoodValue: 0
