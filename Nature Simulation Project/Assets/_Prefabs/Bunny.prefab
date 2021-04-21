@@ -5158,6 +5158,14 @@ MonoBehaviour:
   curFood: 0
   curRest: 0
   curHealth: 0
+  mySpecies: Animal
+  sizeClass: 0
+  damage: 20
+  sex: 
+  isPregnant: 0
+  minOffspring: 3
+  maxOffspring: 8
+  myPrefab: {fileID: 7820923349300004675}
 --- !u!114 &7820923349300004681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5172,6 +5180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 75
   time: 5
+  isHunter: 0
   canEat: 0
 --- !u!54 &1917886927
 Rigidbody:
