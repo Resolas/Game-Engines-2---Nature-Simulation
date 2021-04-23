@@ -19,7 +19,7 @@ public class CameraSwitch : MonoBehaviour
     void SwitchCurCam()
     {
 
-        if (curCam > myCams.Length)
+        if (curCam < myCams.Length - 1)
         {
             curCam++;
         }
@@ -48,8 +48,6 @@ public class CameraSwitch : MonoBehaviour
 
     IEnumerator RunCam(int time)
     {
-
-        
 
         while (true)
         {

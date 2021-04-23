@@ -17,6 +17,7 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
         sex = sexArray[rng];
 
         StartCoroutine(PassiveConsumptionRate(5));
+        StartCoroutine(TimeTillMaturity(1));
 
     }
 
@@ -57,11 +58,13 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
     public string sex;
     private string[] sexArray = new string[]{"Male","Female"};
     public bool isPregnant;
- //   public bool isFertile;
+    public bool isMature;
+    public int matureTime = 60;
     public int minOffspring = 1;
     public int maxOffspring = 3;
     private int offspringTotal;
     private float birthTime = 60f;
+    
     public GameObject myPrefab;
 
     void Reproduce()
@@ -71,6 +74,11 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
         for (int i = 0; i < offspringTotal; i++)
         {
           var newOffspring = Instantiate(myPrefab,transform.position,Quaternion.identity);
+            var setOffspring = newOffspring.GetComponent<CreatureNeeds>();
+
+            setOffspring.isMature = false;
+            setOffspring.isPregnant = false;
+            setOffspring.matureTime = 60;
 
 
         }
@@ -101,6 +109,28 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
 
         }
 
+
+    }
+
+    IEnumerator TimeTillMaturity(int waitTime)
+    {
+
+        while (true)
+        {
+
+            matureTime--;
+
+            if (matureTime <= 0 || isMature)
+            {
+
+                isMature = true;
+
+                //  StopCoroutine("TimeTillMaturity");
+                yield break;
+            }
+            Debug.Log(matureTime);
+            yield return new WaitForSeconds(waitTime);
+        }
 
     }
 

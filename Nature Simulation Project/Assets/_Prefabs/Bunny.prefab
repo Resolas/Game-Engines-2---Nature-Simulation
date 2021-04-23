@@ -5127,8 +5127,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 8
-  m_Acceleration: 8
+  m_Speed: 10
+  m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 180
   m_StoppingDistance: 0.5
@@ -5158,11 +5158,13 @@ MonoBehaviour:
   curFood: 0
   curRest: 0
   curHealth: 0
-  mySpecies: Animal
+  mySpecies: Bunny
   sizeClass: 0
   damage: 20
   sex: 
   isPregnant: 0
+  isMature: 0
+  matureTime: 60
   minOffspring: 3
   maxOffspring: 8
   myPrefab: {fileID: 7820923349300004675}

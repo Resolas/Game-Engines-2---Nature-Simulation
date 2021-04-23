@@ -178,7 +178,7 @@ public class LandAI : MonoBehaviour
                 float getDist;
                 Transform finalTarget = null;
 
-                foreach (Collider myAnimal in getAnimals)
+                foreach (Collider myAnimal in getAnimals)           // Hunt
                 {
 
                     if (myAnimal.CompareTag("Fauna") != true) continue;   // Skip if its not a plant (Trees Excluded)
@@ -230,6 +230,7 @@ public class LandAI : MonoBehaviour
                     if (myMate.GetComponent<CreatureNeeds>().mySpecies != getNeeds.mySpecies) continue; // skip if not the same species
                     if (myMate.GetComponent<CreatureNeeds>().isPregnant) continue;          // skip if its already pregnant
                     if (myMate.GetComponent<CreatureNeeds>().sex != "Female") continue;
+                    if (myMate.GetComponent<CreatureNeeds>().isMature != true) continue;
 
                     getDist = Vector3.Distance(transform.position, myMate.transform.position);
 
