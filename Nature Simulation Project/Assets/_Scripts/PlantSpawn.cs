@@ -44,11 +44,7 @@ public class PlantSpawn : MonoBehaviour
 
                 if (Physics.Raycast(transform.position + new Vector3(spacing * i + rngX, transform.position.y,spacing * j + rngZ),Vector3.down, out hit,Mathf.Infinity))
                 {
-                
-
-                    
-
-
+ 
                     if (hit.collider.CompareTag(targetTag))
                     {
                         int rngPlant = Random.Range(0, getSpawnTable.mySpawnList.Length);

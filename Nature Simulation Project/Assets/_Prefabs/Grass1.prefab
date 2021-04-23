@@ -724,6 +724,13 @@ MonoBehaviour:
   curGrowth: 0
   tillMaturity: 0
   isMature: 0
+  hasSpread: 0
+  foodValue: 0
+  finalfoodValue: 0
+  spreadTime: 0
+  minFood: 2
+  maxFood: 4
+  myPrefab: {fileID: 4689878081399019543}
 --- !u!1 &4689878081529782981
 GameObject:
   m_ObjectHideFlags: 0

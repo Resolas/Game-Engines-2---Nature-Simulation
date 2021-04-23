@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 9034964217480898709}
   - component: {fileID: 5722744552307059528}
   - component: {fileID: 8141475225408718601}
+  - component: {fileID: -2042351613266649415}
   m_Layer: 0
   m_Name: TreeTrunk2
   m_TagString: Untagged
@@ -2185,3 +2186,19 @@ MonoBehaviour:
   ignoreRange: 1
   spawnPerPointRange: 3
   spawnNum: 2
+--- !u!208 &-2042351613266649415
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8003657426290370752}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 5, y: 7.5, z: 5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

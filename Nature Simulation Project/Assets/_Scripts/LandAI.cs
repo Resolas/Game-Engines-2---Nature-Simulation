@@ -282,6 +282,11 @@ public class LandAI : MonoBehaviour
         myAgent.destination = wanderPos + transform.position;
     }
 
+
+    [Header("Collide Effects")]
+    public GameObject leafExpl;
+    public GameObject bloodExpl;
+
     private void OnCollisionStay(Collision collision)
     {
         //  Debug.Log("TESTCOL");
@@ -292,6 +297,7 @@ public class LandAI : MonoBehaviour
             var getFood = collision.collider.GetComponent<PlantGrowth>();
             getNeeds.curFood += getFood.finalfoodValue;
             canEat = false;
+            Instantiate(leafExpl, collision.collider.transform.position,Quaternion.identity);
             Destroy(collision.gameObject);
 
         }
@@ -301,6 +307,7 @@ public class LandAI : MonoBehaviour
             var getFood = collision.collider.GetComponent<CreatureNeeds>();
             getNeeds.curFood += (getFood.curFood / 2) + 10;
             canEat = false;
+            Instantiate(bloodExpl, collision.collider.transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
         }
 

@@ -2272,5 +2272,10 @@ MonoBehaviour:
   curGrowth: 0
   tillMaturity: 0
   isMature: 0
+  hasSpread: 0
   foodValue: 0
   finalfoodValue: 0
+  spreadTime: 0
+  minFood: 21
+  maxFood: 51
+  myPrefab: {fileID: 2073272599527690814}

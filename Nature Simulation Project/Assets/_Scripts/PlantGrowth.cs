@@ -12,7 +12,7 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
         // Start Growth
         curGrowth = Random.Range(0,0.2f);
         growthRateRange = Random.Range(1,2);
-        foodValue = Random.Range(5,50);
+        foodValue = Random.Range(minFood,maxFood);
     }
 
     public float growthRate = 0.01f;
@@ -22,9 +22,17 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
     public int tillMaturity;
 
     public bool isMature;
+    public bool hasSpread;
     public int foodValue;
     public int finalfoodValue;
+    public int spreadTime;
 
+    [Range(0,100)]
+    public int minFood = 5;
+    [Range(0,100)]
+    public int maxFood = 10;
+
+    public GameObject myPrefab;
     Transform myTransform;
 
     // Update is called once per frame
@@ -38,6 +46,8 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
             curGrowth += growthRate * growthRateRange * Time.deltaTime;
             myTransform.localScale = new Vector3(1 * curGrowth,1 * curGrowth,1 * curGrowth);
 
+            
+
             if (curGrowth > 1)
             {
                 isMature = true;
@@ -50,9 +60,61 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
 
         }
 
-        
+        if (isMature && hasSpread == false)
+        {
+            StartCoroutine(SpreadPlants(30));
+            hasSpread = true;
+            Debug.Log("PLANTSPREAD STARTED");
+        }
 
 
+
+    }
+
+    IEnumerator SpreadPlants(int waitTime)      // Do this only once
+    {
+
+        while (true)
+        {
+
+            yield return new WaitForSeconds(waitTime);
+
+            int plantCount = Random.Range(1,3);
+
+            for (int i = 0; i < plantCount; i++)
+            {
+                float rngX = Random.Range(-5f,5f);
+                float rngZ = Random.Range(-5f,5f);
+
+                RaycastHit hit;
+
+                if (Physics.Raycast(transform.position + new Vector3(rngX, 10, rngZ), Vector3.down, out hit, Mathf.Infinity))
+                {
+                    if (hit.collider.CompareTag("GroundFertile"))
+                    {
+                        GameObject newPlant = Instantiate(myPrefab, hit.point, Quaternion.Euler(0, Random.Range(0, 360), 0));
+                        PlantGrowth setPlant = newPlant.GetComponent<PlantGrowth>();
+
+                        setPlant.curGrowth = Random.Range(0f, 0.05f);
+                        setPlant.foodValue = Random.Range(5, 50);
+                        setPlant.curGrowth = Random.Range(0, 0.2f);
+                        setPlant.growthRateRange = Random.Range(1, 2);
+                        setPlant.isMature = false;
+                        setPlant.hasSpread = false;
+
+                    }
+
+                    
+
+                }
+
+                
+
+            }
+            Debug.Log("PLANTSPREAD");
+            yield break;
+
+        }
 
     }
 }

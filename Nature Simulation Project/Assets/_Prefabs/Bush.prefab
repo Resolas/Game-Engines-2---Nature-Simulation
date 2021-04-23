@@ -1455,6 +1455,13 @@ MonoBehaviour:
   curGrowth: 0
   tillMaturity: 0
   isMature: 0
+  hasSpread: 0
+  foodValue: 0
+  finalfoodValue: 0
+  spreadTime: 0
+  minFood: 25
+  maxFood: 55
+  myPrefab: {fileID: 1667063730575864900}
 --- !u!135 &8828340839248199011
 SphereCollider:
   m_ObjectHideFlags: 0

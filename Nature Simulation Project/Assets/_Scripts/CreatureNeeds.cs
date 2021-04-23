@@ -108,8 +108,8 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
             yield return new WaitForSeconds(waitTime);
 
         }
-
-
+        
+        
     }
 
     IEnumerator TimeTillMaturity(int waitTime)
