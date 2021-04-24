@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8798378876529205984}
   - component: {fileID: 2786532682892988045}
   - component: {fileID: 3755296685100720113}
+  - component: {fileID: -4885210746290835708}
   m_Layer: 0
   m_Name: TreeLeaves1
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2253,3 +2254,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &-4885210746290835708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862697474782205218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fb60bbc0bd2d54c90e3eab58e1849a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireSource: 0
+  range: 10
+  time: 5
+  fireDuration: 5
+  fireEffect: {fileID: 7114021305950164059, guid: 0b807589cce9e2846a8d8125e008889f, type: 3}
+  disableLifeSettings: 0
+  health: 20
+  onFire: 0
+  isFlammable: 1

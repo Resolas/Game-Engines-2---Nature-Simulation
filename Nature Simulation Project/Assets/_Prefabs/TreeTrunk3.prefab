@@ -45,9 +45,10 @@ GameObject:
   - component: {fileID: 938800547246437944}
   - component: {fileID: 7967766975972434823}
   - component: {fileID: 5283295177943001189}
+  - component: {fileID: -4806173537957542749}
   m_Layer: 0
   m_Name: TreeTrunk3
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1602,6 +1603,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -0.69}
   m_TimeToStationary: 0.5
+--- !u!114 &-4806173537957542749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900214266187187781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fb60bbc0bd2d54c90e3eab58e1849a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireSource: 0
+  range: 13
+  time: 5
+  fireDuration: 5
+  fireEffect: {fileID: 7114021305950164059, guid: 0b807589cce9e2846a8d8125e008889f, type: 3}
+  disableLifeSettings: 0
+  health: 50
+  onFire: 0
+  isFlammable: 1
 --- !u!1 &3420860512153956921
 GameObject:
   m_ObjectHideFlags: 0

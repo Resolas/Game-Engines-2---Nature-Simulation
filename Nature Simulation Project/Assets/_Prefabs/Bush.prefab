@@ -1416,6 +1416,7 @@ GameObject:
   - component: {fileID: 1667063730575864903}
   - component: {fileID: 1097708839299412186}
   - component: {fileID: 8828340839248199011}
+  - component: {fileID: -3678441093576814031}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Flora
@@ -1475,3 +1476,24 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.48
   m_Center: {x: 0, y: 1.83, z: 0}
+--- !u!114 &-3678441093576814031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667063730575864900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fb60bbc0bd2d54c90e3eab58e1849a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireSource: 0
+  range: 5
+  time: 5
+  fireDuration: 5
+  fireEffect: {fileID: 7114021305950164059, guid: 0b807589cce9e2846a8d8125e008889f, type: 3}
+  disableLifeSettings: 0
+  health: 15
+  onFire: 0
+  isFlammable: 1

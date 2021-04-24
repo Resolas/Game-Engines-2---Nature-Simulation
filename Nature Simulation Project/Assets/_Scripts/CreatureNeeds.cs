@@ -10,13 +10,13 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
 
         curFood = Random.Range(maxFood/2,maxFood);
      //   curWater = Random.Range(maxWater/2,maxWater);
-        curRest = Random.Range(maxRest/2,maxRest);
-        curHealth = Random.Range(maxHealth/2,maxHealth);
+     //   curRest = Random.Range(maxRest/2,maxRest);
+     //   curHealth = Random.Range(maxHealth/2,maxHealth);
 
         int rng = Random.Range(0,2);
         sex = sexArray[rng];
 
-        StartCoroutine(PassiveConsumptionRate(5));
+        StartCoroutine(PassiveConsumptionRate(2));
         StartCoroutine(TimeTillMaturity(1));
 
     }
@@ -46,8 +46,8 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
 
     public int curFood;
  //   public int curWater;
-    public int curRest;
-    public int curHealth;
+ //   public int curRest;
+ //   public int curHealth;
 
     public string mySpecies = "Animal";
     public byte sizeClass = 0;
@@ -98,7 +98,7 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
 
             curFood--;
          //   curWater--;
-            curRest--;
+         //   curRest--;
 
             if (curFood < 0 /* || curWater < 0 */)
             {

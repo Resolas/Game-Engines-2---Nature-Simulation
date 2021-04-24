@@ -44,9 +44,10 @@ GameObject:
   - component: {fileID: 241731031928522668}
   - component: {fileID: 2015446457822316573}
   - component: {fileID: 5276056651798283213}
+  - component: {fileID: 6329622161265574469}
   m_Layer: 0
   m_Name: Branch2
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1401,3 +1402,24 @@ MonoBehaviour:
   ignoreRange: 1
   spawnPerPointRange: 2
   spawnNum: 1
+--- !u!114 &6329622161265574469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520354381894122727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fb60bbc0bd2d54c90e3eab58e1849a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireSource: 0
+  range: 5
+  time: 5
+  fireDuration: 5
+  fireEffect: {fileID: 7114021305950164059, guid: 0b807589cce9e2846a8d8125e008889f, type: 3}
+  disableLifeSettings: 0
+  health: 35
+  onFire: 0
+  isFlammable: 1

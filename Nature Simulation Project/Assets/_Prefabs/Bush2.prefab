@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2073272599527690944}
   - component: {fileID: 2073272599527690945}
   - component: {fileID: 9167854643589549139}
+  - component: {fileID: 1389532472817522219}
   m_Layer: 0
   m_Name: Bush2
   m_TagString: Flora
@@ -2279,3 +2280,24 @@ MonoBehaviour:
   minFood: 21
   maxFood: 51
   myPrefab: {fileID: 2073272599527690814}
+--- !u!114 &1389532472817522219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073272599527690814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fb60bbc0bd2d54c90e3eab58e1849a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireSource: 0
+  range: 5
+  time: 5
+  fireDuration: 5
+  fireEffect: {fileID: 7114021305950164059, guid: 0b807589cce9e2846a8d8125e008889f, type: 3}
+  disableLifeSettings: 0
+  health: 15
+  onFire: 0
+  isFlammable: 1
