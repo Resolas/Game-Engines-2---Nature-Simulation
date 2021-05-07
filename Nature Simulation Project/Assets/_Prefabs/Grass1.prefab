@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4689878080622818107}
   m_Layer: 0
   m_Name: GrassBlade
-  m_TagString: Untagged
+  m_TagString: Flora
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -668,7 +668,7 @@ MeshCollider:
   m_GameObject: {fileID: 4689878080622818106}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -782,7 +782,7 @@ GameObject:
   - component: {fileID: 4689878081529782982}
   m_Layer: 0
   m_Name: GrassBlade
-  m_TagString: Untagged
+  m_TagString: Flora
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1435,7 +1435,7 @@ MeshCollider:
   m_GameObject: {fileID: 4689878081529782981}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -1455,7 +1455,7 @@ GameObject:
   - component: {fileID: 4689878081554379205}
   m_Layer: 0
   m_Name: GrassBlade
-  m_TagString: Untagged
+  m_TagString: Flora
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2108,7 +2108,7 @@ MeshCollider:
   m_GameObject: {fileID: 4689878081554379204}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30

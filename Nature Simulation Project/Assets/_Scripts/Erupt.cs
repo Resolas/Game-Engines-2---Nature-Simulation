@@ -19,6 +19,7 @@ public class Erupt : MonoBehaviour
     MeshRenderer myMeshR;
 
     public GameObject[] ObjHolder;
+    public EnvironmentSwitch getEnv;
 
     IEnumerator Eruption(float waitTime)
     {
@@ -30,14 +31,14 @@ public class Erupt : MonoBehaviour
 
             myCol.enabled = false;
             myMeshR.enabled = false;
-
+            
             for (int i = 0; i < ObjHolder.Length; i++)
             {
 
                 ObjHolder[i].SetActive(true);
 
             }
-
+            getEnv.environmentEffectActive = true;
 
             yield break;
 
