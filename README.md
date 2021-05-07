@@ -17,3 +17,13 @@ Models will preferably be made in unity or in blender instead of importing third
 STORYBOARD OF NATURE SCENE
 ![Nature Sim Storyboard1](https://user-images.githubusercontent.com/64108044/109565623-a125cb80-7ada-11eb-8737-4e79ed1239c0.png)
 
+
+
+References:
+
+Klankbeeld - forest summer Roond 020 200619_0186.wav  - https://freesound.org/people/klankbeeld/sounds/530415/
+Newagesoup - wolf-growl.wav   - https://freesound.org/people/newagesoup/sounds/338674/
+Audionautics - Lava loop.wav   - https://freesound.org/people/Audionautics/sounds/133901/
+Ryansnook - Big Explosion.wav  - https://freesound.org/people/ryansnook/sounds/110111/
+
+
