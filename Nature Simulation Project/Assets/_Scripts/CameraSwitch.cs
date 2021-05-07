@@ -36,10 +36,14 @@ public class CameraSwitch : MonoBehaviour
 
                 myCams[i].SetActive(true);
 
+                myCams[i].GetComponent<AudioListener>().enabled = true;
+
             }
             else
             {
                 myCams[i].SetActive(false);
+
+                myCams[i].GetComponent<AudioListener>().enabled = false;
             }
 
         }
