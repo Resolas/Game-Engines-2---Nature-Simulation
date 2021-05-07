@@ -3212,12 +3212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d04ca3f23c3024ca8096555308b7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
+  time: 45
   ObjHolder:
   - {fileID: 877545713}
   - {fileID: 1701028896}
   getEnv: {fileID: 683651361}
-  myClip1: {fileID: 8300000, guid: 5abda4fdaf621e74d8702734093e4293, type: 3}
+  myClip1: {fileID: 8300000, guid: 9154e54d1cc0fd346afb1bd26223c3e6, type: 3}
   myAudioSrc1: {fileID: 1210635751}
   myClip2: {fileID: 8300000, guid: b67da403304e86a4eb166cf49ca997f8, type: 3}
   myAudioSrc2: {fileID: 1210635746}
@@ -3427,14 +3427,14 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 9154e54d1cc0fd346afb1bd26223c3e6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.6
+  m_Pitch: 0.53
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 100
+  MinDistance: 200
   MaxDistance: 1000
   Pan2D: 0
   rolloffMode: 1
@@ -3470,7 +3470,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.571
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5315,7 +5315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2211518154527920747, guid: 91f9fe0ba9be9c74aab7e1a0713f858c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.600006
+      value: -12.13
       objectReference: {fileID: 0}
     - target: {fileID: 2211518154527920747, guid: 91f9fe0ba9be9c74aab7e1a0713f858c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5433,11 +5433,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8872182366128655864, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: power
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8872182366128655864, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: accuracy
-      value: 20
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872182366128655864, guid: 053779584e867434080d08b25f12aeaa, type: 3}
+      propertyPath: timer
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8872182366128655865, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: m_Name
@@ -5461,7 +5465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8872182366128655867, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7684368
+      value: -0.7463986
       objectReference: {fileID: 0}
     - target: {fileID: 8872182366128655867, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5473,7 +5477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8872182366128655867, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6399258
+      value: 0.66549915
       objectReference: {fileID: 0}
     - target: {fileID: 8872182366128655867, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: m_RootOrder
@@ -5481,7 +5485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8872182366128655867, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -100.427
+      value: -96.559
       objectReference: {fileID: 0}
     - target: {fileID: 8872182366128655867, guid: 053779584e867434080d08b25f12aeaa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

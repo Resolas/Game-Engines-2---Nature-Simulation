@@ -3122,7 +3122,7 @@ MonoBehaviour:
       m_Rotation: 0
       m_Anchor: 9
     m_Material: {fileID: 0}
-    m_SubmeshIndex: 0
+    m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
     m_TextureGroup: -1
@@ -5810,6 +5810,7 @@ MonoBehaviour:
   health: 20
   onFire: 0
   isFlammable: 1
+  fireTime: 0
 --- !u!1 &7354029474534508446
 GameObject:
   m_ObjectHideFlags: 0

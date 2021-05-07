@@ -2406,11 +2406,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explodeOnImpact: 0
   timeToExplode: 30
-  range: 20
+  range: 30
   bounceEff: {fileID: 9211392131991790516, guid: 74047f675a7af164792770c6b8b72a3f, type: 3}
   ExplodeEff: {fileID: 6813126473767724986, guid: 346539dcb26bb7b4d86e041c974386b9, type: 3}
   fireEff: {fileID: 7114021305950164059, guid: 0b807589cce9e2846a8d8125e008889f, type: 3}
-  myClip: {fileID: 8300000, guid: 5abda4fdaf621e74d8702734093e4293, type: 3}
 --- !u!82 &7552742584219515233
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2431,8 +2430,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 10
-  MaxDistance: 50
+  MinDistance: 30
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -2467,7 +2466,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.919
+      value: 0.691
       inSlope: 0
       outSlope: 0
       tangentMode: 0

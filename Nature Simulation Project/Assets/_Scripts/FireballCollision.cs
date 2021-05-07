@@ -5,12 +5,6 @@ using UnityEngine;
 public class FireballCollision : MonoBehaviour
 {
 
-    private void Start()
-    {
-        myAudioSrc = GetComponent<AudioSource>();
-
-    }
-
     public bool explodeOnImpact;
 
     public float timeToExplode = 20;
@@ -19,9 +13,6 @@ public class FireballCollision : MonoBehaviour
     public GameObject bounceEff;
     public GameObject ExplodeEff;
     public GameObject fireEff;
-
-    public AudioClip myClip;
-    private AudioSource myAudioSrc;
 
     private void FixedUpdate()
     {
@@ -50,9 +41,7 @@ public class FireballCollision : MonoBehaviour
                 Instantiate(bounceEff,contact.point,Quaternion.identity);
                 timeToExplode -= 1f;
 
-                myAudioSrc.clip = myClip;
-                myAudioSrc.pitch = Random.Range(0.8f,1.2f);
-                myAudioSrc.Play();
+                
 
             }
 

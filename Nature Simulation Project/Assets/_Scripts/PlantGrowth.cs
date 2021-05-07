@@ -10,7 +10,7 @@ public class PlantGrowth : MonoBehaviour        // for bushes, crops etcs and NO
         myTransform = GetComponent<Transform>();
 
         // Start Growth
-        curGrowth = Random.Range(0,0.2f);
+        curGrowth = Random.Range(0,0.7f);
         growthRateRange = Random.Range(1,2);
         foodValue = Random.Range(minFood,maxFood);
     }
