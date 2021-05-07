@@ -76,7 +76,7 @@ public class Systemics : MonoBehaviour      //  Fire mechanics and stuff e.g. fi
     public int health = 10;
     public bool onFire = false;     // can become a new source
     public bool isFlammable = true;
-    private int fireTime = 0;
+    public int fireTime = 0;
 
     IEnumerator CheckHealth(int waitTime)
     {

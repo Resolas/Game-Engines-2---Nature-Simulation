@@ -128,7 +128,7 @@ public class CreatureNeeds : MonoBehaviour      // Stats that creatures need to 
                 //  StopCoroutine("TimeTillMaturity");
                 yield break;
             }
-            Debug.Log(matureTime);
+        //    Debug.Log(matureTime);
             yield return new WaitForSeconds(waitTime);
         }
 
